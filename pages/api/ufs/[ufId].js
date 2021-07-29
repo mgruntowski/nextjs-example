@@ -9,7 +9,7 @@ handler.use(dbMiddleware)
 handler.get(async (req, res) => {
     const { ufId } = req.query
 
-    const doc = await req.db.collection('oaes').findOne({ _id: ObjectId(ufId) })
+    const doc = await req.db.collection('ufs').findOne({ _id: ObjectId(ufId) })
 
     res.json(doc)
 })
