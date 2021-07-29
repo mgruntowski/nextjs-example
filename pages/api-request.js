@@ -9,7 +9,7 @@ export default function ApiRequest(props) {
 export async function getServerSideProps(ctx) {
     const props = {}
 
-    const res = await fetch('http://localhost:3000/api/ufs')
+    const res = await fetch('https://nextjs-example-mgruntowski.vercel.app/api/ufs')
     props.data = await res.json()
 
     return {
