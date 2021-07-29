@@ -1,6 +1,6 @@
 import { ObjectId } from 'mongodb'
 import nextConnect from 'next-connect'
-import dbMiddleware from '../../middlewares/database'
+import dbMiddleware from '../../../middlewares/database'
 
 const handler = nextConnect()
 
