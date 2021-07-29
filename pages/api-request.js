@@ -1,5 +1,6 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
+import Image from 'next/image'
 
 export default function ApiRequest(props) {
     const [data, setData] = useState([])
@@ -11,8 +12,11 @@ export default function ApiRequest(props) {
     // }, [setData])
 
     return (<>
+        <Image src="/img/scooby.jpg" alt="scooby-doo" width="429" height="644"/>
         {props.data.map((d, index) =>
-            <p key={index}>{JSON.stringify(d)}</p>    
+            <a href={`/api-request/${d._id}`} target="_blank" rel="noreferrer" key={index}>
+                <p>{JSON.stringify(d)}</p>
+            </a>    
         )}
     </>)
 }
