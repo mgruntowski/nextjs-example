@@ -1,6 +1,6 @@
 export default function ApiRequest(props) {
     return (<>
-        <p>{JSON.stringify(d)}</p>    
+        <p>{JSON.stringify(props.data)}</p>    
     </>)
 }
 
