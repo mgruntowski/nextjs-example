@@ -17,7 +17,7 @@ export default function ApiRequest(props) {
     </>)
 }
 
-export async function getStaticProps(ctx) {
+export async function getServerSideProps(ctx) {
     const props = {}
 
     const res = await fetch('https://nextjs-example-mgruntowski.vercel.app/api/ufs')
