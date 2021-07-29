@@ -4,7 +4,7 @@ export default function ApiRequest(props) {
     </>)
 }
 
-/*export async function getStaticPaths() {
+export async function getStaticPaths() {
     const res = await fetch('https://nextjs-example-mgruntowski.vercel.app/api/ufs')
     const resData = await res.json()
 
@@ -24,4 +24,4 @@ export async function getStaticProps({ params }) {
             data: resData
         }
     }
-}*/
+}
